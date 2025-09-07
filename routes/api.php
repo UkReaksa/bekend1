@@ -25,5 +25,8 @@ Route::middleware(['auth:sanctum'])->get('/user', function (Request $request) {
 });
 
 Route::apiResource('roles', RoleController::class);
-
 Route::apiResource('users', UserController::class);
+
+// Post Categories
+Route::apiResource('post-categories', App\Http\Controllers\PostCategoryController::class);
+Route::apiResource('posts', App\Http\Controllers\PostController::class);
